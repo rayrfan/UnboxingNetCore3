@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppRazor", "WebAppRazor\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibRazorComponent", "RazorClassLibRazorComponent\RazorClassLibRazorComponent.csproj", "{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibRazorPage", "RazorClassLibRazorPage\RazorClassLibRazorPage.csproj", "{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
