@@ -18,6 +18,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\RazorClassLibRazorComponent\RazorClassLibRazorComponent.csproj" />
     <ProjectReference Include="..\RazorClassLibRazorPage\RazorClassLibRazorPage.csproj" />
   </ItemGroup>
 
