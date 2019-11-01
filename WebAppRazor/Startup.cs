@@ -12,17 +12,21 @@ using WebAppRazor.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.IO;
+using Microsoft.Extensions.FileProviders;
 
 namespace WebAppRazor
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            this.env = env;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment env { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -32,7 +36,26 @@ namespace WebAppRazor
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddRazorPages();
+           
+            var builder = services.AddRazorPages();
+
+#if DEBUG
+            if (env.IsDevelopment())
+            {
+                // list all my class libs I want to monitor
+                string[] dirs = { "RazorClassLibRazorPage", "RazorClassLibRazorComponent" };
+
+                builder.AddRazorRuntimeCompilation(options =>
+                {
+                    // add each to options file providers
+                    foreach (var dir in dirs)
+                    {
+                        var libraryPath = Path.GetFullPath(Path.Combine(env.ContentRootPath, "..", dir));
+                        options.FileProviders.Add(new PhysicalFileProvider(libraryPath));
+                    }
+                });
+            }
+#endif
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
