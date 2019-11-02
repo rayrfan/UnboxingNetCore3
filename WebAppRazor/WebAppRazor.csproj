@@ -17,7 +17,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.0" Condition="'$(Configuration)' == 'Debug'" />
   </ItemGroup>
 
-
+  <ItemGroup>
+    <Watch Include="..\RazorClassLibRazorComponent\**\*.razor" />
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\RazorClassLibRazorComponent\RazorClassLibRazorComponent.csproj" />
     <ProjectReference Include="..\RazorClassLibRazorPage\RazorClassLibRazorPage.csproj" />

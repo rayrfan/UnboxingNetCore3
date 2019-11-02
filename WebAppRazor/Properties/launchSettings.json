@@ -22,6 +22,18 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "WebAppRazor Watch": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:5001/",
+      "workingDirectory": "$(ProjectDir)",
+      "commandLineArgs": "watch run",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }
