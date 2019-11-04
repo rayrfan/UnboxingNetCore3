@@ -23,6 +23,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    // dotnet watch run must run Ctrl + F5 not debug
     "WebAppRazor Watch": {
       "commandName": "Executable",
       "executablePath": "dotnet",

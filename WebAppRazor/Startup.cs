@@ -65,6 +65,7 @@ namespace WebAppRazor
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                //app.UseBrowserLink();
             }
             else
             {
