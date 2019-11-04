@@ -7,15 +7,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\Blaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppRazor", "WebAppRazor\WebAppRazor.csproj", "{5BF750F2-E265-4159-A2E2-D0651DF14399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibRazorComponent", "RazorClassLibRazorComponent\RazorClassLibRazorComponent.csproj", "{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibRazorComponent", "RazorClassLibRazorComponent\RazorClassLibRazorComponent.csproj", "{75ECF435-6E6A-4D62-9ED1-A2F9D1EA7979}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibRazorPage", "RazorClassLibRazorPage\RazorClassLibRazorPage.csproj", "{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibRazorPage", "RazorClassLibRazorPage\RazorClassLibRazorPage.csproj", "{1DCE41A8-E0FF-4CEB-826B-4FFEF73DBC19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppMvc", "WebAppMvc\WebAppMvc.csproj", "{78A7B350-504E-4203-9942-83056B4B4EF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppMvc", "WebAppMvc\WebAppMvc.csproj", "{78A7B350-504E-4203-9942-83056B4B4EF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib", "ClassLib\ClassLib.csproj", "{6078D1BF-89AB-4F1C-89E5-F263434DCECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLib", "ClassLib\ClassLib.csproj", "{6078D1BF-89AB-4F1C-89E5-F263434DCECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{2D284DB1-B9AE-4F68-A988-84B2D83D4A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{2D284DB1-B9AE-4F68-A988-84B2D83D4A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{88A57BA8-B221-4843-B1AF-BFCD7B8765F7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
